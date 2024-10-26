@@ -1,0 +1,5 @@
+Welcome to the Team Research & Development
+------------------------------------------
+
+If you found any errors like '403' while push via RStudio, you can refer the following link
+https://stackoverflow.com/questions/7438313/pushing-to-git-returning-error-code-403-fatal-http-request-failed
