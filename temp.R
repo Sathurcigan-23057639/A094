@@ -26,3 +26,5 @@ h <- hist(df$`Goal Scored`,
 x <- seq(min(df$`Goal Scored`), max(df$`Goal Scored`), length.out = 100)
 mn <- mean(df$`Goal Scored`)
 stdDev <- sd(df$`Goal Scored`)
+yn <- dnorm(x, mean = mn, sd = stdDev)
+box.size <- diff(h$mids)[1] * length(df$`Goal Scored`)
