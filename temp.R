@@ -1,19 +1,21 @@
 library(readr)
 #show data set
 head(FIFA_2018_Statistics,2)
+df <- FIFA_2018_Statistics
+View(df)
 
 #Scatterplot 
-plot(FIFA_2018_Statistics$`Ball Possession %`, FIFA_2018_Statistics$`Goal Scored`,
+plot(df$`Ball Possession %`, df$`Goal Scored`,
      xlab = "Ball Possession %", ylab =
        "Goal Scored", main
      = "Scatterplot of Ball Possession % vs Goal Scored") #
 
-abline(lm(FIFA_2018_Statistics$`Goal Scored` ~
-            FIFA_2018_Statistics$`Ball Possession %`), col = "red")
+abline(lm(df$`Goal Scored` ~
+            df$`Ball Possession %`), col = "red")
 
 #Histogram
-hist(FIFA_2018_Statistics$`Goal Scored`, main = "Goal Scored Frequency")
-cor.test(FIFA_2018_Statistics$`Ball Possession %`, FIFA_2018_Statistics$`Goal Scored`,
+hist(df$`Goal Scored`, main = "Goal Scored Frequency")
+cor.test(df$`Ball Possession %`, df$`Goal Scored`,
          method="spearman")
 
 # Histogram with normal curve
