@@ -28,3 +28,5 @@ mn <- mean(df$`Goal Scored`)
 stdDev <- sd(df$`Goal Scored`)
 yn <- dnorm(x, mean = mn, sd = stdDev)
 box.size <- diff(h$mids)[1] * length(df$`Goal Scored`)
+yn <- yn * box.size
+lines(x, yn, col = "red", lwd = 2)
