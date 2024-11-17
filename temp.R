@@ -23,3 +23,6 @@ h <- hist(df$`Goal Scored`,
           ylab = "Frequency", 
           col = "azure", 
           freq = TRUE)
+x <- seq(min(df$`Goal Scored`), max(df$`Goal Scored`), length.out = 100)
+mn <- mean(df$`Goal Scored`)
+stdDev <- sd(df$`Goal Scored`)
