@@ -14,3 +14,12 @@ abline(lm(FIFA_2018_Statistics$`Goal Scored` ~
 hist(FIFA_2018_Statistics$`Goal Scored`, main = "Goal Scored Frequency")
 cor.test(FIFA_2018_Statistics$`Ball Possession %`, FIFA_2018_Statistics$`Goal Scored`,
          method="spearman")
+
+# Histogram 
+h <- hist(df$`Goal Scored`, 
+          breaks = 6, 
+          main = "Goal Scored Histogram", 
+          xlab = "Goal Scored", 
+          ylab = "Frequency", 
+          col = "azure", 
+          freq = TRUE)
