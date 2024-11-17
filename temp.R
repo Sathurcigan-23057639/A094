@@ -1,3 +1,4 @@
+library(readr)
 #show data set
 head(FIFA_2018_Statistics,2)
 
