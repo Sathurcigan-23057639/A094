@@ -13,4 +13,8 @@ This project predicts the FIFA 2018 "Man of the Match" using statistical models.
 2. Run the `temp.R` script in R to generate predictions.
 
 ## Contributors
-- Sathurcigan
+- Sathurcigan-23057639
+- Lakshman-10
+- KavinduPorambage
+- Binalka-bs24aaw
+- Nipuna199923
