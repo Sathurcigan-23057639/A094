@@ -13,7 +13,7 @@ plot(df$`Ball Possession %`, df$`Goal Scored`,
 abline(lm(df$`Goal Scored` ~
             df$`Ball Possession %`), col = "red")
 
-# Histogram
+# Spearman Test
 cor.test(df$`Ball Possession %`, df$`Goal Scored`, method = "spearman")
 
 # Histogram with normal curve
