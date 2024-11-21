@@ -13,10 +13,6 @@ plot(df$`Ball Possession %`, df$`Goal Scored`,
 abline(lm(df$`Goal Scored` ~
             df$`Ball Possession %`), col = "red")
 
-#Histogram
-hist(df$`Goal Scored`, main = "Goal Scored Frequency")
-cor.test(df$`Ball Possession %`, df$`Goal Scored`,
-         method="spearman")
 
 # Histogram with normal curve
 h <- hist(df$`Goal Scored`, 
