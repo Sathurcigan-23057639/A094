@@ -4,6 +4,10 @@ head(FIFA_2018_Statistics,2)
 df <- FIFA_2018_Statistics
 View(df)
 
+#lets make all the values in each of `Goal Scored` and `Ball Possession %`columns as numeric
+df$`Goal Scored` <- as.numeric(df$`Goal Scored`)
+df$`Ball Possession %` <- as.numeric(df$`Ball Possession %`)
+
 #Scatterplot 
 plot(df$`Ball Possession %`, df$`Goal Scored`,
      xlab = "Ball Possession %", ylab =
